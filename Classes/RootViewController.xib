@@ -74,6 +74,9 @@
 					<bytes key="NSRGB">MCAwIDAuNTAxOTYwODE0AA</bytes>
 				</object>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
+				<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
+					<boolean value="YES" key="IBUIIsAccessibilityElement"/>
+				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 		</object>
@@ -90,19 +93,19 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">textField</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="963219455"/>
-					</object>
-					<int key="connectionID">5</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
 						<reference key="source" ref="963219455"/>
 						<reference key="destination" ref="191373211"/>
 					</object>
 					<int key="connectionID">7</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">ibTextField</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="963219455"/>
+					</object>
+					<int key="connectionID">10</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -156,7 +159,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>RootViewController</string>
 					<string>UIResponder</string>
-					<string>{{504, 145}, {320, 480}}</string>
+					<string>{{332, 145}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>TDTextField</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -178,7 +181,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">7</int>
+			<int key="maxID">10</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -187,13 +190,13 @@
 					<string key="className">RootViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">textField</string>
+						<string key="NS.key.0">ibTextField</string>
 						<string key="NS.object.0">TDTextField</string>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">textField</string>
+						<string key="NS.key.0">ibTextField</string>
 						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">textField</string>
+							<string key="name">ibTextField</string>
 							<string key="candidateClassName">TDTextField</string>
 						</object>
 					</object>

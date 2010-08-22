@@ -37,7 +37,7 @@
 		3298BEDA1211908600A0929E /* TDKeyboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TDKeyboardViewController.xib; sourceTree = "<group>"; };
 		3298BF3B1211954100A0929E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		3298BF3C1211954100A0929E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		3298BF3D1211954100A0929E /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RootViewController.xib; path = Classes/RootViewController.xib; sourceTree = "<group>"; };
+		3298BF3D1211954100A0929E /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		32A3713712189A46008ECAD3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* TDInputView_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDInputView_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* TDInputView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TDInputView-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -65,6 +65,7 @@
 				1D3623250D0F684500981E51 /* TDInputViewAppDelegate.m */,
 				3298BF3B1211954100A0929E /* RootViewController.h */,
 				3298BF3C1211954100A0929E /* RootViewController.m */,
+				3298BF3D1211954100A0929E /* RootViewController.xib */,
 				3298BED31211905C00A0929E /* TDTextField.h */,
 				3298BED41211905C00A0929E /* TDTextField.m */,
 				3298BED81211908600A0929E /* TDKeyboardViewController.h */,
@@ -107,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				3298BF3D1211954100A0929E /* RootViewController.xib */,
 				8D1107310486CEB800E47090 /* TDInputView-Info.plist */,
 			);
 			name = Resources;

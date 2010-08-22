@@ -16,9 +16,19 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-	[textField setDelegate:self];
-	[textField setKeyboardClicks:YES];
-	[textField becomeFirstResponder];
+	// Text field set in Interface Builder
+	[ibTextField setDelegate:self];
+	[ibTextField setKeyboardClicks:YES]; // Keyboard clicks enabled
+//	[ibTextField setKeyboardClicks:NO]; // Keyboard clicks disabled
+	
+	// Text field set in code
+	codeTextField = [[TDTextField alloc] initWithFrame:CGRectMake(20.0f, 59.0f, 280.0f, 31.0f)];
+	[[self view] addSubview:codeTextField];
+	[codeTextField setDelegate:self]; // Remember to set the delegate
+	[codeTextField setKeyboardClicks:YES]; // Keyboard clicks enabled
+	
+	// Cosmetic
+	[codeTextField setBorderStyle:UITextBorderStyleRoundedRect];
 }
 
 #pragma mark -

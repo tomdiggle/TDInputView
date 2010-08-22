@@ -12,7 +12,8 @@
 
 @interface RootViewController : UIViewController <UITextFieldDelegate>
 {
-	IBOutlet TDTextField *textField;
+	IBOutlet TDTextField *ibTextField;
+	TDTextField *codeTextField;
 }
 
 @end
