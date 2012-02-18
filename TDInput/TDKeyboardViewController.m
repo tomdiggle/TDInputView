@@ -23,7 +23,7 @@
 - (IBAction)characterSelected:(id)sender
 // The currentTitle is used as the string
 {
-	if (delegate != nil)
+	if (delegate)
 	{
 		[delegate characterTapped:[sender currentTitle]];
 	}
@@ -31,7 +31,7 @@
 
 - (IBAction)deleteBackward:(id)sender
 {
-	if (delegate != nil)
+	if (delegate)
 	{	
 		[delegate deleteBackwardTapped];
 	}
@@ -39,7 +39,7 @@
 
 - (IBAction)returnTapped:(id)sender
 {
-	if (delegate != nil)
+	if (delegate)
 	{
 		[delegate returnTapped];
 	}
