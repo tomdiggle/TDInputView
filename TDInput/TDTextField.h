@@ -21,7 +21,7 @@
 
 @property (nonatomic, readwrite) CFURLRef keyboardSoundURLRef;
 @property (nonatomic, readonly) SystemSoundID keyboardSoundFileObject;
-@property (nonatomic, readwrite) BOOL keyboardClicks;
+@property (nonatomic, assign) BOOL keyboardClicks;
 @property (nonatomic, retain) TDKeyboardViewController *tdKeyboardInputView;
 @property (nonatomic, assign) id <UITextFieldDelegate> delegate;
 
