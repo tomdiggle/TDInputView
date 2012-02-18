@@ -45,21 +45,21 @@
     [super dealloc];
 }
 
-#pragma mark -
-#pragma mark inputView
+#pragma mark - inputView
 
+/*
+ If the value in this property is nil, the text field displays the standard system keyboard when it becomes first responder.
+ Assigning a custom view to this property causes that view to be presented instead.
+ */
 - (UIView*)inputView
-// If the value in this property is nil, the text field displays the standard system keyboard when it becomes first responder.
-// Assigning a custom view to this property causes that view to be presented instead.
 {
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 40000
 	if (!tdKeyboardInputView)
 	{
 		tdKeyboardInputView = [[TDKeyboardViewController alloc] initWithNibName:@"TDKeyboardViewController" 
 																		 bundle:[NSBundle mainBundle]];
 		[tdKeyboardInputView setDelegate:self];
 	}
-#endif	
+
 	return tdKeyboardInputView.view;
 }
 
