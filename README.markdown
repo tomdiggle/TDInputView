@@ -12,7 +12,7 @@ Displaying TDInputView In Code
 	[[self view] addSubview:codeTextField];
 	[codeTextField setDelegate:self]; // Remember to set the delegate
 	[codeTextField setKeyboardClicks:YES]; // Keyboard clicks enabled
-	[codeTextField setKeyboardClicks:YES]; // Keyboard clicks disabled
+	[codeTextField setKeyboardClicks:NO]; // Keyboard clicks disabled
 
 License
 -------
