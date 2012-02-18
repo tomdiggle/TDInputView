@@ -11,6 +11,14 @@
 
 @implementation TDTextField
 
+#pragma mark - Synthesize
+
+@synthesize keyboardSoundURLRef;
+@synthesize keyboardSoundFileObject;
+@synthesize keyboardClicks;
+@synthesize tdKeyboardInputView;
+@synthesize delegate;
+
 #pragma mark - Initializers
 
 - (id)initWithFrame:(CGRect)frame
@@ -100,10 +108,5 @@
 		[delegate textFieldDidEndEditing:self];
 	}
 }
-
-#pragma mark -
-#pragma mark Synthesize
-
-@synthesize keyboardSoundURLRef, keyboardSoundFileObject, keyboardClicks, tdKeyboardInputView, delegate;
 
 @end
