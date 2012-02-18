@@ -34,17 +34,15 @@
     return self;
 }
 
-#pragma mark -
-#pragma mark Memory Management
+#pragma mark - Memory Management
 
 - (void)dealloc
 {
-	self.delegate = nil;
-	[tdKeyboardInputView release];
-	tdKeyboardInputView = nil;
-	AudioServicesDisposeSystemSoundID([self keyboardSoundFileObject]);
-	CFRelease(keyboardSoundURLRef);
-	[super dealloc];
+    CFRelease(keyboardSoundURLRef);
+    AudioServicesDisposeSystemSoundID([self keyboardSoundFileObject]);
+	[tdKeyboardInputView release], tdKeyboardInputView = nil;
+    [self setDelegate:nil];
+    [super dealloc];
 }
 
 #pragma mark -
