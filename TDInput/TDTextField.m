@@ -63,8 +63,7 @@
 	return tdKeyboardInputView.view;
 }
 
-#pragma mark -
-#pragma mark playKeyboardClicks
+#pragma mark - playKeyboardClicks
 
 - (void)playKeyboardClicks
 {
@@ -74,8 +73,7 @@
 	}
 }
 
-#pragma mark -
-#pragma mark TDKeyboardViewControllerDelegate Methods
+#pragma mark - TDKeyboardViewControllerDelegate Methods
 
 - (void)characterTapped:(NSString*)aString
 {
