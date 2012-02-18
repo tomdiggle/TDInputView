@@ -17,9 +17,6 @@
 @end
 
 @interface TDKeyboardViewController : UIViewController
-{
-	id <TDKeyboardViewControllerDelegate> delegate;
-}
 
 @property (nonatomic, assign) id <TDKeyboardViewControllerDelegate> delegate;
 
