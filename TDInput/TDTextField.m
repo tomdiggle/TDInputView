@@ -11,6 +11,21 @@
 
 @implementation TDTextField
 
+#pragma mark - Initializers
+
+- (id)initWithFrame:(CGRect)frame
+{
+    if (!(self = [super initWithFrame:frame]))
+    {
+        return nil;
+    }
+    
+    keyboardSoundURLRef = CFBundleCopyResourceURL(CFBundleGetBundleWithIdentifier(CFSTR("com.apple.UIKit")), CFSTR("Tock"), CFSTR("aiff"), NULL);
+    AudioServicesCreateSystemSoundID(keyboardSoundURLRef, &keyboardSoundFileObject);
+    
+    return self;
+}
+
 #pragma mark -
 #pragma mark Memory Management
 
@@ -37,9 +52,6 @@
 		tdKeyboardInputView = [[TDKeyboardViewController alloc] initWithNibName:@"TDKeyboardViewController" 
 																		 bundle:[NSBundle mainBundle]];
 		[tdKeyboardInputView setDelegate:self];
-		
-		keyboardSoundURLRef = CFBundleCopyResourceURL(CFBundleGetBundleWithIdentifier(CFSTR("com.apple.UIKit")), CFSTR("Tock"), CFSTR("aiff"), NULL);
-		AudioServicesCreateSystemSoundID(keyboardSoundURLRef, &keyboardSoundFileObject);
 	}
 #endif	
 	return tdKeyboardInputView.view;
