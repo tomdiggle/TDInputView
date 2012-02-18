@@ -11,13 +11,6 @@
 #import "TDKeyboardViewController.h"
 
 @interface TDTextField : UITextField <TDKeyboardViewControllerDelegate>
-{
-	CFURLRef keyboardSoundURLRef;
-	SystemSoundID keyboardSoundFileObject;
-	BOOL keyboardClicks;
-	TDKeyboardViewController *tdKeyboardInputView;
-	id <UITextFieldDelegate> delegate;
-}
 
 @property (nonatomic, readwrite) CFURLRef keyboardSoundURLRef;
 @property (nonatomic, readonly) SystemSoundID keyboardSoundFileObject;
