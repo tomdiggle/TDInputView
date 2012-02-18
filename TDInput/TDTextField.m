@@ -77,8 +77,20 @@
 
 - (void)characterTapped:(NSString*)aString
 {
+	BOOL appendTextString = YES;
 	[self playKeyboardClicks];
-	[self setText:[[self text] stringByAppendingString:aString]];
+	
+	if (delegate && [delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)])
+	{
+		appendTextString = [delegate textField:self
+				 shouldChangeCharactersInRange:NSMakeRange([self text].length, 1)
+							 replacementString:aString];
+	}
+	
+	if (appendTextString)
+	{
+		[self setText:[[self text] stringByAppendingString:aString]];
+	}
 }
 
 - (void)deleteBackwardTapped
