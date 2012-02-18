@@ -10,6 +10,10 @@
 
 @implementation TDKeyboardViewController
 
+#pragma mark - Synthesize
+
+@synthesize delegate;
+
 #pragma mark - Memory management
 
 - (void)dealloc 
@@ -44,9 +48,5 @@
 		[delegate returnTapped];
 	}
 }
-
-#pragma mark - Synthesize
-
-@synthesize delegate;
 
 @end
