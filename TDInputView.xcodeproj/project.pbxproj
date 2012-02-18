@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		32978F8614EFDA2A00DBCC27 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F7C14EFDA2A00DBCC27 /* RootViewController.m */; };
 		32978F8714EFDA2A00DBCC27 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32978F7D14EFDA2A00DBCC27 /* RootViewController.xib */; };
-		32978F8814EFDA2A00DBCC27 /* TDKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F8014EFDA2A00DBCC27 /* TDKeyboardViewController.m */; };
-		32978F8914EFDA2A00DBCC27 /* TDKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32978F8114EFDA2A00DBCC27 /* TDKeyboardViewController.xib */; };
-		32978F8A14EFDA2A00DBCC27 /* TDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F8314EFDA2A00DBCC27 /* TDTextField.m */; };
 		32978F8B14EFDA2A00DBCC27 /* TDInputViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F8514EFDA2A00DBCC27 /* TDInputViewAppDelegate.m */; };
+		32978F9214EFFF1A00DBCC27 /* TDKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F8E14EFFF1A00DBCC27 /* TDKeyboardViewController.m */; };
+		32978F9314EFFF1A00DBCC27 /* TDKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32978F8F14EFFF1A00DBCC27 /* TDKeyboardViewController.xib */; };
+		32978F9414EFFF1A00DBCC27 /* TDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F9114EFFF1A00DBCC27 /* TDTextField.m */; };
+		32978F9914F0007A00DBCC27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F9814F0007A00DBCC27 /* main.m */; };
+		32978F9D14F000F800DBCC27 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32978F9C14F000F800DBCC27 /* MainWindow.xib */; };
 		32A3713812189A46008ECAD3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A3713712189A46008ECAD3 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,21 +26,21 @@
 		1D6058910D05DD3D006BFB54 /* TDInputView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDInputView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32978F7B14EFDA2A00DBCC27 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		32978F7C14EFDA2A00DBCC27 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		32978F7D14EFDA2A00DBCC27 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
-		32978F7F14EFDA2A00DBCC27 /* TDKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDKeyboardViewController.h; sourceTree = "<group>"; };
-		32978F8014EFDA2A00DBCC27 /* TDKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDKeyboardViewController.m; sourceTree = "<group>"; };
-		32978F8114EFDA2A00DBCC27 /* TDKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDKeyboardViewController.xib; sourceTree = "<group>"; };
-		32978F8214EFDA2A00DBCC27 /* TDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTextField.h; sourceTree = "<group>"; };
-		32978F8314EFDA2A00DBCC27 /* TDTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTextField.m; sourceTree = "<group>"; };
 		32978F8414EFDA2A00DBCC27 /* TDInputViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDInputViewAppDelegate.h; path = Example/TDInputViewAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		32978F8514EFDA2A00DBCC27 /* TDInputViewAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDInputViewAppDelegate.m; path = Example/TDInputViewAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		32978F8D14EFFF1A00DBCC27 /* TDKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDKeyboardViewController.h; sourceTree = "<group>"; };
+		32978F8E14EFFF1A00DBCC27 /* TDKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDKeyboardViewController.m; sourceTree = "<group>"; };
+		32978F8F14EFFF1A00DBCC27 /* TDKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDKeyboardViewController.xib; sourceTree = "<group>"; };
+		32978F9014EFFF1A00DBCC27 /* TDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTextField.h; sourceTree = "<group>"; };
+		32978F9114EFFF1A00DBCC27 /* TDTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTextField.m; sourceTree = "<group>"; };
+		32978F9514EFFF7400DBCC27 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Example/Prefix.pch; sourceTree = "<group>"; };
+		32978F9614EFFFA100DBCC27 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Example/Info.plist; sourceTree = "<group>"; };
+		32978F9814F0007A00DBCC27 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Example/main.m; sourceTree = "<group>"; };
+		32978F9C14F000F800DBCC27 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = Example/MainWindow.xib; sourceTree = "<group>"; };
 		32A3713712189A46008ECAD3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		32CA4F630368D1EE00C91783 /* TDInputView_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDInputView_Prefix.pch; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* TDInputView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TDInputView-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +69,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				32978F8C14EFFF1A00DBCC27 /* TDInputView */,
 				32978F7A14EFDA2A00DBCC27 /* Example */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -81,8 +82,8 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* TDInputView_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
+				32978F9814F0007A00DBCC27 /* main.m */,
+				32978F9514EFFF7400DBCC27 /* Prefix.pch */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -90,8 +91,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				8D1107310486CEB800E47090 /* TDInputView-Info.plist */,
+				32978F9C14F000F800DBCC27 /* MainWindow.xib */,
+				32978F9614EFFFA100DBCC27 /* Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -110,7 +111,6 @@
 		32978F7A14EFDA2A00DBCC27 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				32978F7E14EFDA2A00DBCC27 /* TDInputView */,
 				32978F8414EFDA2A00DBCC27 /* TDInputViewAppDelegate.h */,
 				32978F8514EFDA2A00DBCC27 /* TDInputViewAppDelegate.m */,
 				32978F7B14EFDA2A00DBCC27 /* RootViewController.h */,
@@ -120,14 +120,14 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
-		32978F7E14EFDA2A00DBCC27 /* TDInputView */ = {
+		32978F8C14EFFF1A00DBCC27 /* TDInputView */ = {
 			isa = PBXGroup;
 			children = (
-				32978F7F14EFDA2A00DBCC27 /* TDKeyboardViewController.h */,
-				32978F8014EFDA2A00DBCC27 /* TDKeyboardViewController.m */,
-				32978F8114EFDA2A00DBCC27 /* TDKeyboardViewController.xib */,
-				32978F8214EFDA2A00DBCC27 /* TDTextField.h */,
-				32978F8314EFDA2A00DBCC27 /* TDTextField.m */,
+				32978F8D14EFFF1A00DBCC27 /* TDKeyboardViewController.h */,
+				32978F8E14EFFF1A00DBCC27 /* TDKeyboardViewController.m */,
+				32978F8F14EFFF1A00DBCC27 /* TDKeyboardViewController.xib */,
+				32978F9014EFFF1A00DBCC27 /* TDTextField.h */,
+				32978F9114EFFF1A00DBCC27 /* TDTextField.m */,
 			);
 			path = TDInputView;
 			sourceTree = "<group>";
@@ -181,9 +181,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				32978F8714EFDA2A00DBCC27 /* RootViewController.xib in Resources */,
-				32978F8914EFDA2A00DBCC27 /* TDKeyboardViewController.xib in Resources */,
+				32978F9314EFFF1A00DBCC27 /* TDKeyboardViewController.xib in Resources */,
+				32978F9D14F000F800DBCC27 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,11 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				32978F8614EFDA2A00DBCC27 /* RootViewController.m in Sources */,
-				32978F8814EFDA2A00DBCC27 /* TDKeyboardViewController.m in Sources */,
-				32978F8A14EFDA2A00DBCC27 /* TDTextField.m in Sources */,
 				32978F8B14EFDA2A00DBCC27 /* TDInputViewAppDelegate.m in Sources */,
+				32978F9214EFFF1A00DBCC27 /* TDKeyboardViewController.m in Sources */,
+				32978F9414EFFF1A00DBCC27 /* TDTextField.m in Sources */,
+				32978F9914F0007A00DBCC27 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,8 +213,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = TDInputView_Prefix.pch;
-				INFOPLIST_FILE = "TDInputView-Info.plist";
+				GCC_PREFIX_HEADER = Example/Prefix.pch;
+				INFOPLIST_FILE = Example/Info.plist;
 				PRODUCT_NAME = TDInputView;
 			};
 			name = Debug;
@@ -225,8 +225,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = TDInputView_Prefix.pch;
-				INFOPLIST_FILE = "TDInputView-Info.plist";
+				GCC_PREFIX_HEADER = Example/Prefix.pch;
+				INFOPLIST_FILE = Example/Info.plist;
 				PRODUCT_NAME = TDInputView;
 				VALIDATE_PRODUCT = YES;
 			};
