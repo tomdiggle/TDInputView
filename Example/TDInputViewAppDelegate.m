@@ -11,21 +11,11 @@
 
 @implementation TDInputViewAppDelegate
 
-- (void)dealloc
-{
-	[rootViewController release];
-    [window release];
-    [super dealloc];
-}
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{   
-	[window addSubview:rootViewController.view];
-    [window makeKeyAndVisible];
+{
+    [self.window makeKeyAndVisible];
 	
 	return YES;
 }
-
-@synthesize window, rootViewController;
 
 @end

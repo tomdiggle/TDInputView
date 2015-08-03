@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pUh-wf-FrT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ef7-jh-bUg">
+            <objects>
+                <navigationController id="pUh-wf-FrT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5ju-p2-whO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="12I-sd-bIH" kind="relationship" relationship="rootViewController" id="5Rl-FC-xAo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sh-8a-iWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-324" y="363"/>
+        </scene>
+        <!--Demo-->
+        <scene sceneID="5z1-nW-MQ2">
+            <objects>
+                <viewController title="Demo" id="12I-sd-bIH" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IUI-q1-AHD"/>
+                        <viewControllerLayoutGuide type="bottom" id="NCR-90-obU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n0J-li-K4u">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K4W-zs-6gC" customClass="TDTextField">
+                                <rect key="frame" x="20" y="72" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="12I-sd-bIH" id="gVQ-Mn-dxi"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K4W-zs-6gC" firstAttribute="top" secondItem="IUI-q1-AHD" secondAttribute="bottom" constant="8" id="51e-ef-cGr"/>
+                            <constraint firstItem="K4W-zs-6gC" firstAttribute="trailing" secondItem="n0J-li-K4u" secondAttribute="trailingMargin" id="SDQ-JG-I0k"/>
+                            <constraint firstItem="K4W-zs-6gC" firstAttribute="leading" secondItem="n0J-li-K4u" secondAttribute="leadingMargin" id="X8c-7F-Jk9"/>
+                            <constraint firstItem="NCR-90-obU" firstAttribute="top" secondItem="K4W-zs-6gC" secondAttribute="bottom" constant="498" id="xIR-98-lP7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xIR-98-lP7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="HdR-t8-Ypw"/>
+                    <connections>
+                        <outlet property="textField" destination="K4W-zs-6gC" id="JFx-Tg-UE5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lzh-u3-ckC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="363"/>
+        </scene>
+    </scenes>
+</document>

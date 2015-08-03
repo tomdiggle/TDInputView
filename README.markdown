@@ -1,20 +1,16 @@
-TDInputView for iPhone
-======================
-TDInputView is an open source replacement for the standard system keyboard in iOS 4.0+. This is very useful if you only need to display a few keys instead of the whole keyboard. The only down side (if it is one) is that you have to design the keys yourself.
+# TDInputView for iOS
+TDInputView is an open source custom input view which is displayed when a text field becomes the first responder.
 
-Installation
-------------
-Just drag the files from TDInputView directory into your project.
+## Requirements
+TCDInputView is written in Objective-C and requires Xcode 7.0 b4 to run. A Swift version is available [here](https://github.com/tomdiggle/TCDInputView).
 
-Displaying TDInputView In Code
-------------------------------
-	codeTextField = [[TDTextField alloc] initWithFrame:CGRectMake(20.0f, 59.0f, 280.0f, 31.0f)];
-	[[self view] addSubview:codeTextField];
-	[codeTextField setDelegate:self]; // Remember to set the delegate
-	[codeTextField setKeyboardClicks:YES]; // Keyboard clicks enabled
-	[codeTextField setKeyboardClicks:NO]; // Keyboard clicks disabled
+## Adding TCDInputView To Your Project
+### Source Files
+Add the files located in the `TDInputView` directory to your project.
 
-License
--------
-You can freely use this code sample in any project, commercial or otherwise, at your own risk. It would be nice if I get a mention but it’s not necessary.
+## Usage
+To display the custom input view when a text field becomes the first responder make sure the text field is a subclass of `TDTextField`. For further information see the demo.
+
+## License
+TDInputView is distributed under the [MIT License](https://github.com/tomdiggle/tdinputview/blob/master/License.markdown).
 

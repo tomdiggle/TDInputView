@@ -10,42 +10,39 @@
 
 @implementation TDKeyboardViewController
 
-#pragma mark - Synthesize
-
-@synthesize delegate;
-
 #pragma mark - Memory management
 
 - (void)dealloc 
 {
 	self.delegate = nil;
-	[super dealloc];
 }
 
 #pragma mark - IBAction Methods
 
 - (IBAction)characterSelected:(id)sender
-// The currentTitle is used as the string
 {
-	if (delegate)
+    if (self.delegate)
 	{
-		[delegate characterTapped:[sender currentTitle]];
+        [UIDevice.currentDevice playInputClick];
+		[self.delegate characterTapped:[sender currentTitle]];
 	}
 }
 
 - (IBAction)deleteBackward:(id)sender
 {
-	if (delegate)
-	{	
-		[delegate deleteBackwardTapped];
+	if (self.delegate)
+	{
+        [UIDevice.currentDevice playInputClick];
+		[self.delegate deleteBackwardTapped];
 	}
 }
 
 - (IBAction)returnTapped:(id)sender
 {
-	if (delegate)
+    if (self.delegate)
 	{
-		[delegate returnTapped];
+        [UIDevice.currentDevice playInputClick];
+		[self.delegate returnTapped];
 	}
 }
 

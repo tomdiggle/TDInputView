@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class TDTextField;
-
 @interface RootViewController : UIViewController <UITextFieldDelegate>
 {
-	IBOutlet TDTextField *ibTextField;
-	TDTextField *codeTextField;
+    
 }
+
+@property (nonatomic, weak) IBOutlet UITextField *textField;
 
 @end

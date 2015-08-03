@@ -9,98 +9,71 @@
 #import "TDTextField.h"
 #import "TDKeyboardViewController.h"
 
+@interface TDTextField () <TDKeyboardViewControllerDelegate>
+
+@property (nonatomic, retain) TDKeyboardViewController *keyboardView;
+
+@end
+
 @implementation TDTextField
-
-#pragma mark - Synthesize
-
-@synthesize keyboardSoundURLRef;
-@synthesize keyboardSoundFileObject;
-@synthesize keyboardClicks;
-@synthesize tdKeyboardInputView;
-@synthesize delegate;
 
 #pragma mark - Memory Management
 
 - (void)dealloc
 {
-    CFRelease(keyboardSoundURLRef);
-    AudioServicesDisposeSystemSoundID([self keyboardSoundFileObject]);
-	[tdKeyboardInputView release], tdKeyboardInputView = nil;
-    [self setDelegate:nil];
-    [super dealloc];
+    self.delegate = nil;
 }
 
 #pragma mark - inputView
 
-/*
- If the value in this property is nil, the text field displays the standard system keyboard when it becomes first responder.
- Assigning a custom view to this property causes that view to be presented instead.
- */
-- (UIView*)inputView
+- (UIView *)inputView
 {
-	if (!tdKeyboardInputView)
+	if (!self.keyboardView)
 	{
-		tdKeyboardInputView = [[TDKeyboardViewController alloc] initWithNibName:@"TDKeyboardViewController" 
-																		 bundle:[NSBundle mainBundle]];
-		[tdKeyboardInputView setDelegate:self];
-        keyboardSoundURLRef = CFBundleCopyResourceURL(CFBundleGetBundleWithIdentifier(CFSTR("com.apple.UIKit")), CFSTR("Tock"), CFSTR("aiff"), NULL);
-        AudioServicesCreateSystemSoundID(keyboardSoundURLRef, &keyboardSoundFileObject);
+		self.keyboardView = [[TDKeyboardViewController alloc] initWithNibName:@"TDKeyboardViewController"
+                                                                       bundle:[NSBundle mainBundle]];
+        self.keyboardView.delegate = self;
 	}
 
-	return tdKeyboardInputView.view;
-}
-
-#pragma mark - playKeyboardClicks
-
-- (void)playKeyboardClicks
-{
-	if (keyboardClicks)
-	{
-		AudioServicesPlaySystemSound([self keyboardSoundFileObject]);
-	}
+	return self.keyboardView.view;
 }
 
 #pragma mark - TDKeyboardViewControllerDelegate Methods
 
-- (void)characterTapped:(NSString*)aString
+- (void)characterTapped:(NSString*)string
 {
 	BOOL appendTextString = YES;
-	[self playKeyboardClicks];
 	
-	if (delegate && [delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)])
+	if (self.delegate && [self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)])
 	{
-		appendTextString = [delegate textField:self
-				 shouldChangeCharactersInRange:NSMakeRange([self text].length, 1)
-							 replacementString:aString];
+		appendTextString = [self.delegate textField:self
+                      shouldChangeCharactersInRange:NSMakeRange(self.text.length, 1)
+                                  replacementString:string];
 	}
 	
 	if (appendTextString)
 	{
-		[self setText:[[self text] stringByAppendingString:aString]];
+		[self setText:[self.text stringByAppendingString:string]];
 	}
 }
 
 - (void)deleteBackwardTapped
 {
-	NSMutableString *textStore = [[self text] mutableCopy];
+	NSMutableString *textStore = [self.text mutableCopy];
 	
 	if ([textStore length] != 0)
 	{
-		[self playKeyboardClicks];
 		NSRange theRange = NSMakeRange(textStore.length-1, 1);
 		[textStore deleteCharactersInRange:theRange];
-		[self setText:textStore];
+        self.text = textStore;
 	}
-	
-	[textStore release];
 }
 
 - (void)returnTapped
 {
-	if (delegate != nil)
+	if (self.delegate)
 	{
-		[self playKeyboardClicks];
-		[delegate textFieldDidEndEditing:self];
+		[self.delegate textFieldShouldReturn:self];
 	}
 }
 

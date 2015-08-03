@@ -16,12 +16,8 @@
 
 @end
 
-@interface TDKeyboardViewController : UIViewController
+@interface TDKeyboardViewController : UIViewController <UIInputViewAudioFeedback>
 
 @property (nonatomic, assign) id <TDKeyboardViewControllerDelegate> delegate;
-
-- (IBAction)characterSelected:(id)sender;
-- (IBAction)deleteBackward:(id)sender;
-- (IBAction)returnTapped:(id)sender;
 
 @end

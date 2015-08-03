@@ -10,14 +10,14 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		32226D881B6FA4680013EC4C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32226D871B6FA4680013EC4C /* Default-568h@2x.png */; };
+		32226D8A1B6FA46F0013EC4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32226D891B6FA46F0013EC4C /* Main.storyboard */; };
 		32978F8614EFDA2A00DBCC27 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F7C14EFDA2A00DBCC27 /* RootViewController.m */; };
-		32978F8714EFDA2A00DBCC27 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32978F7D14EFDA2A00DBCC27 /* RootViewController.xib */; };
 		32978F8B14EFDA2A00DBCC27 /* TDInputViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F8514EFDA2A00DBCC27 /* TDInputViewAppDelegate.m */; };
 		32978F9214EFFF1A00DBCC27 /* TDKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F8E14EFFF1A00DBCC27 /* TDKeyboardViewController.m */; };
 		32978F9314EFFF1A00DBCC27 /* TDKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32978F8F14EFFF1A00DBCC27 /* TDKeyboardViewController.xib */; };
 		32978F9414EFFF1A00DBCC27 /* TDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F9114EFFF1A00DBCC27 /* TDTextField.m */; };
 		32978F9914F0007A00DBCC27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F9814F0007A00DBCC27 /* main.m */; };
-		32978F9D14F000F800DBCC27 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32978F9C14F000F800DBCC27 /* MainWindow.xib */; };
 		32A3713812189A46008ECAD3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A3713712189A46008ECAD3 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,9 +26,10 @@
 		1D6058910D05DD3D006BFB54 /* TDInputView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDInputView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		32226D871B6FA4680013EC4C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Example/Default-568h@2x.png"; sourceTree = "<group>"; };
+		32226D891B6FA46F0013EC4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Example/Main.storyboard; sourceTree = "<group>"; };
 		32978F7B14EFDA2A00DBCC27 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		32978F7C14EFDA2A00DBCC27 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		32978F7D14EFDA2A00DBCC27 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		32978F8414EFDA2A00DBCC27 /* TDInputViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDInputViewAppDelegate.h; path = Example/TDInputViewAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		32978F8514EFDA2A00DBCC27 /* TDInputViewAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDInputViewAppDelegate.m; path = Example/TDInputViewAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		32978F8D14EFFF1A00DBCC27 /* TDKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDKeyboardViewController.h; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		32978F9514EFFF7400DBCC27 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Example/Prefix.pch; sourceTree = "<group>"; };
 		32978F9614EFFFA100DBCC27 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Example/Info.plist; sourceTree = "<group>"; };
 		32978F9814F0007A00DBCC27 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Example/main.m; sourceTree = "<group>"; };
-		32978F9C14F000F800DBCC27 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = Example/MainWindow.xib; sourceTree = "<group>"; };
 		32A3713712189A46008ECAD3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -91,7 +91,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				32978F9C14F000F800DBCC27 /* MainWindow.xib */,
+				32226D891B6FA46F0013EC4C /* Main.storyboard */,
+				32226D871B6FA4680013EC4C /* Default-568h@2x.png */,
 				32978F9614EFFFA100DBCC27 /* Info.plist */,
 			);
 			name = Resources;
@@ -115,7 +116,6 @@
 				32978F8514EFDA2A00DBCC27 /* TDInputViewAppDelegate.m */,
 				32978F7B14EFDA2A00DBCC27 /* RootViewController.h */,
 				32978F7C14EFDA2A00DBCC27 /* RootViewController.m */,
-				32978F7D14EFDA2A00DBCC27 /* RootViewController.xib */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -158,7 +158,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TDInputView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -181,9 +181,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32978F8714EFDA2A00DBCC27 /* RootViewController.xib in Resources */,
+				32226D8A1B6FA46F0013EC4C /* Main.storyboard in Resources */,
 				32978F9314EFFF1A00DBCC27 /* TDKeyboardViewController.xib in Resources */,
-				32978F9D14F000F800DBCC27 /* MainWindow.xib in Resources */,
+				32226D881B6FA4680013EC4C /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,12 +209,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Example/Prefix.pch;
 				INFOPLIST_FILE = Example/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tomdiggle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = TDInputView;
 			};
 			name = Debug;
@@ -223,10 +225,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Example/Prefix.pch;
 				INFOPLIST_FILE = Example/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tomdiggle.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = TDInputView;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -235,12 +239,13 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -248,12 +253,11 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};
