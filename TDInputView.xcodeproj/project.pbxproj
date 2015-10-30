@@ -10,12 +10,15 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		320A12511BE40F0A00A5C54D /* TDKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 320A12501BE40F0A00A5C54D /* TDKeyboardViewController.xib */; };
+		320A12561BE40F5700A5C54D /* backspace.png in Resources */ = {isa = PBXBuildFile; fileRef = 320A12531BE40F5700A5C54D /* backspace.png */; };
+		320A12571BE40F5700A5C54D /* backspace@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320A12541BE40F5700A5C54D /* backspace@2x.png */; };
+		320A12581BE40F5700A5C54D /* backspace@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320A12551BE40F5700A5C54D /* backspace@3x.png */; };
 		32226D881B6FA4680013EC4C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32226D871B6FA4680013EC4C /* Default-568h@2x.png */; };
 		32226D8A1B6FA46F0013EC4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32226D891B6FA46F0013EC4C /* Main.storyboard */; };
 		32978F8614EFDA2A00DBCC27 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F7C14EFDA2A00DBCC27 /* RootViewController.m */; };
 		32978F8B14EFDA2A00DBCC27 /* TDInputViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F8514EFDA2A00DBCC27 /* TDInputViewAppDelegate.m */; };
 		32978F9214EFFF1A00DBCC27 /* TDKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F8E14EFFF1A00DBCC27 /* TDKeyboardViewController.m */; };
-		32978F9314EFFF1A00DBCC27 /* TDKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32978F8F14EFFF1A00DBCC27 /* TDKeyboardViewController.xib */; };
 		32978F9414EFFF1A00DBCC27 /* TDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F9114EFFF1A00DBCC27 /* TDTextField.m */; };
 		32978F9914F0007A00DBCC27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32978F9814F0007A00DBCC27 /* main.m */; };
 		32A3713812189A46008ECAD3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A3713712189A46008ECAD3 /* AudioToolbox.framework */; };
@@ -26,6 +29,10 @@
 		1D6058910D05DD3D006BFB54 /* TDInputView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDInputView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		320A12501BE40F0A00A5C54D /* TDKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDKeyboardViewController.xib; sourceTree = "<group>"; };
+		320A12531BE40F5700A5C54D /* backspace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backspace.png; sourceTree = "<group>"; };
+		320A12541BE40F5700A5C54D /* backspace@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backspace@2x.png"; sourceTree = "<group>"; };
+		320A12551BE40F5700A5C54D /* backspace@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backspace@3x.png"; sourceTree = "<group>"; };
 		32226D871B6FA4680013EC4C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Example/Default-568h@2x.png"; sourceTree = "<group>"; };
 		32226D891B6FA46F0013EC4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Example/Main.storyboard; sourceTree = "<group>"; };
 		32978F7B14EFDA2A00DBCC27 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
@@ -34,7 +41,6 @@
 		32978F8514EFDA2A00DBCC27 /* TDInputViewAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDInputViewAppDelegate.m; path = Example/TDInputViewAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		32978F8D14EFFF1A00DBCC27 /* TDKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDKeyboardViewController.h; sourceTree = "<group>"; };
 		32978F8E14EFFF1A00DBCC27 /* TDKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDKeyboardViewController.m; sourceTree = "<group>"; };
-		32978F8F14EFFF1A00DBCC27 /* TDKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDKeyboardViewController.xib; sourceTree = "<group>"; };
 		32978F9014EFFF1A00DBCC27 /* TDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTextField.h; sourceTree = "<group>"; };
 		32978F9114EFFF1A00DBCC27 /* TDTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTextField.m; sourceTree = "<group>"; };
 		32978F9514EFFF7400DBCC27 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Example/Prefix.pch; sourceTree = "<group>"; };
@@ -109,6 +115,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		320A12521BE40F5700A5C54D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				320A12531BE40F5700A5C54D /* backspace.png */,
+				320A12541BE40F5700A5C54D /* backspace@2x.png */,
+				320A12551BE40F5700A5C54D /* backspace@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		32978F7A14EFDA2A00DBCC27 /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,9 +139,10 @@
 		32978F8C14EFFF1A00DBCC27 /* TDInputView */ = {
 			isa = PBXGroup;
 			children = (
+				320A12521BE40F5700A5C54D /* Images */,
 				32978F8D14EFFF1A00DBCC27 /* TDKeyboardViewController.h */,
 				32978F8E14EFFF1A00DBCC27 /* TDKeyboardViewController.m */,
-				32978F8F14EFFF1A00DBCC27 /* TDKeyboardViewController.xib */,
+				320A12501BE40F0A00A5C54D /* TDKeyboardViewController.xib */,
 				32978F9014EFFF1A00DBCC27 /* TDTextField.h */,
 				32978F9114EFFF1A00DBCC27 /* TDTextField.m */,
 			);
@@ -182,8 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				32226D8A1B6FA46F0013EC4C /* Main.storyboard in Resources */,
-				32978F9314EFFF1A00DBCC27 /* TDKeyboardViewController.xib in Resources */,
+				320A12561BE40F5700A5C54D /* backspace.png in Resources */,
 				32226D881B6FA4680013EC4C /* Default-568h@2x.png in Resources */,
+				320A12581BE40F5700A5C54D /* backspace@3x.png in Resources */,
+				320A12511BE40F0A00A5C54D /* TDKeyboardViewController.xib in Resources */,
+				320A12571BE40F5700A5C54D /* backspace@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
