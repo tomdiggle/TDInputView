@@ -12,5 +12,5 @@ Add the files located in the `TDInputView` directory to your project.
 To display the custom input view when a text field becomes the first responder make sure the text field is a subclass of `TDTextField`. For further information see the demo.
 
 ## License
-TDInputView is distributed under the [MIT License](https://github.com/tomdiggle/tdinputview/blob/master/License.markdown).
+TDInputView is distributed under the [MIT License](https://github.com/tomdiggle/tdinputview/blob/master/LICENSE).
 
