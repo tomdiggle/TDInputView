@@ -7,6 +7,14 @@ TDInputView is an open source custom input view which is displayed when a text f
 TDInputView is written in Objective-C and requires Xcode 7.0 to run. A Swift version is available [here](https://github.com/tomdiggle/TCDInputView).
 
 ## Adding TCDInputView To Your Project
+### CocoaPods
+[CocoaPods](http://cocoapods.org/) is the recommended way to add TDInputView to your project.
+
+1. Add a pod entry for TDInputView to your Podfile `pod 'TDInputView', '~> 0.1.0'`.
+2. Install the pod(s) by running pod install.
+3. ...
+4. Profit
+
 ### Source Files
 Add the files located in the `TDInputView` directory to your project.
 
