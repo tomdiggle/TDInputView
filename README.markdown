@@ -1,8 +1,10 @@
 # TDInputView for iOS
 TDInputView is an open source custom input view which is displayed when a text field becomes the first responder.
 
+<img src="http://tomdiggle.com/assets/images/tdinputview.png" width="320" height="216">
+
 ## Requirements
-TCDInputView is written in Objective-C and requires Xcode 7.0 to run. A Swift version is available [here](https://github.com/tomdiggle/TCDInputView).
+TDInputView is written in Objective-C and requires Xcode 7.0 to run. A Swift version is available [here](https://github.com/tomdiggle/TCDInputView).
 
 ## Adding TCDInputView To Your Project
 ### Source Files
